@@ -7,12 +7,13 @@
 
 <body>
 <p>本站正在建设中</p>
-<p>留言：</p>
-<!-- 评论系统 -->
+<p><!-- 评论系统 --></p>
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-<!-- 配置gitalk -->
+
+
+<div id="gitalk-container"><!-- 配置gitalk -->
 <script  type="text/javascript">
  var gitalk = new Gitalk({
    // gitalk的主要参数
@@ -26,8 +27,6 @@
     distractionFreeMode: false // 全屏遮罩,jia
   });
   gitalk.render('gitalk-container');
-</script>
-
-<div id="gitalk-container"></div>
+</script></div>
 </body>
 </html>
